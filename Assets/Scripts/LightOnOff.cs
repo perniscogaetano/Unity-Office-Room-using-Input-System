@@ -11,7 +11,6 @@ public class LightOnOff : MonoBehaviour
     private bool PlayerInZone;
     private PlayerInputActions playerInputActions;
 
-    // Start is called before the first frame update
     void Awake()  
     {
         PlayerInZone = false;
@@ -20,7 +19,27 @@ public class LightOnOff : MonoBehaviour
         playerInputActions = new PlayerInputActions();
         playerInputActions.Player.Enable();
         playerInputActions.Player.LightSwitch.performed += LightSwitch;
+        playerInputActions.Player.Click.performed += Click;
 
+    }
+
+    void Click(InputAction.CallbackContext context)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if(Physics.Raycast(ray,out hit) && hit.collider.gameObject == gameObject)
+        {
+            if (PlayerInZone)
+            {
+                foreach (GameObject lightorobj in lights)
+                {
+                    lightorobj.SetActive(!lightorobj.activeSelf);
+                }
+
+                gameObject.GetComponent<AudioSource>().Play();
+                gameObject.GetComponent<Animator>().Play("switch");
+            }
+        }
     }
 
     // Update is called once per frame
