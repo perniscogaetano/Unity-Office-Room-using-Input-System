@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtToDisplay: {fileID: 6591678623214476769}
-  lightorobj: {fileID: 0}
+  lights: []
 --- !u!82 &427774126487838289
 AudioSource:
   m_ObjectHideFlags: 0

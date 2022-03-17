@@ -4465,6 +4465,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Size.x
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Size.z
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Center.x
+      value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Center.y
+      value: 0.21
+      objectReference: {fileID: 0}
     - target: {fileID: 3401978707203697894, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
       propertyPath: m_Controller
       value: 
@@ -5053,6 +5069,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Size.x
+      value: 1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Size.y
+      value: 2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Size.z
+      value: 1.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Center.x
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834221507756285129, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
+      propertyPath: m_Center.y
+      value: -0.26
+      objectReference: {fileID: 0}
     - target: {fileID: 3401978707203697894, guid: dc8a4e4f1df7f9443bd78fcb6d48045a, type: 3}
       propertyPath: m_Controller
       value: 

@@ -29,25 +29,20 @@ public class LightOnOff : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(ray,out hit) && hit.collider.gameObject == gameObject)
         {
-            if (PlayerInZone)
-            {
-                foreach (GameObject lightorobj in lights)
-                {
-                    lightorobj.SetActive(!lightorobj.activeSelf);
-                }
-
-                gameObject.GetComponent<AudioSource>().Play();
-                gameObject.GetComponent<Animator>().Play("switch");
-            }
+            Switch();
         }
     }
 
-    // Update is called once per frame
     void LightSwitch(InputAction.CallbackContext context)
+    {
+        Switch();
+    }
+
+    private void Switch()
     {
         if (PlayerInZone)
         {
-            foreach(GameObject lightorobj in lights)
+            foreach (GameObject lightorobj in lights)
             {
                 lightorobj.SetActive(!lightorobj.activeSelf);
             }
